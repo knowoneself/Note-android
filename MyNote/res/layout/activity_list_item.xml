@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/substation_list_item_selector"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/itme_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_marginLeft="@dimen/main_layout_margin_no_shadow"
+        android:layout_marginRight="@dimen/main_layout_margin_no_shadow"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/itme_detail_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true" >  
+
+            <ImageView
+                android:id="@+id/itme_img"
+                android:layout_width="@dimen/list_item_img_width"
+                android:layout_height="@dimen/list_item_img_height"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/note_only_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/itme_detail_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/itme_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:singleLine="true"
+                android:text="标题标题标题标题标题标题标"
+                android:textSize="@dimen/list_item_title_size" />
+
+            <TextView
+                android:id="@+id/itme_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:text="2014-09-15 下午 16:50"
+                android:textSize="@dimen/list_item_date_size" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

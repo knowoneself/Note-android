@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:bootstrapthumbnail="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/noteDetailLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/detailAboveLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="#3D3D3D" >
+
+        <ImageView
+            android:id="@+id/detailnoteImage"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/return_main" />
+
+        <TextView
+            android:id="@+id/abovetitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/detailnoteImage"
+            android:text="@string/note_name"
+            android:layout_marginLeft="10dp"
+            android:textColor="#668B8B"
+            android:textSize="18sp" />
+        
+         <ImageView
+            android:id="@+id/deletelnoteImage"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/delete_note" />
+         
+        <ImageView
+            android:id="@+id/sychnoteImage"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/deletelnoteImage"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/note_sych" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detailTitleLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailAboveLayout"
+        android:background="#FFF" >
+
+        <EditText
+            android:id="@+id/detailTitleName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="明细"
+            android:textSize="@dimen/detail_title_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/playerControl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <ImageView
+            android:id="@+id/playerRecord"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/play_btn1" />
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/camera_img1" />
+
+        <Button
+            android:id="@+id/record"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/camera"
+            android:layout_toRightOf="@id/playerRecord"
+            android:text="按住    说话"
+            android:textSize="22dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detailContentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/playerControl"
+        android:layout_below="@id/detailTitleLayout"
+        android:background="#FFF" >
+
+        <EditText
+            android:id="@+id/detailContentName"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|left"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"
+            android:textColor="#ff4b4b4b"
+            android:textSize="@dimen/detail_content_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

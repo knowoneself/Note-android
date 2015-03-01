@@ -1,0 +1,36 @@
+<resources>
+
+     <!-- 主列表页字体-->
+     <dimen name="list_item_height">50dp</dimen>
+     <dimen name="list_item_img_width">30dp</dimen>
+     <dimen name="list_item_img_height">30dp</dimen>
+     
+     <dimen name="list_item_title_size">20sp</dimen>
+     <dimen name="list_item_date_size">12sp</dimen>
+     
+     <dimen name="note_query_height">38dp</dimen>
+     <dimen name="note_query_paddingLeft">26dp</dimen>
+     <dimen name="note_query_margin">12dp</dimen>
+     <dimen name="note_query_text_size">15sp</dimen>
+     
+     
+     <!-- note详情页字体-->
+     <dimen name="detail_title_size">22sp</dimen>
+     <dimen name="detail_content_size">20sp</dimen>
+     
+     
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="main_layout_margin_no_shadow">10dp</dimen>
+    <dimen name="device_name_size">18sp</dimen>
+    <dimen name="activity_list_name_diance_margin">5dp</dimen>
+    <dimen name="device_detail_tv_size">14sp</dimen>
+    <dimen name="device_id_size">12sp</dimen>
+    <dimen name="device_collect_img_width">24dp</dimen>
+    <dimen name="device_collect_img_heigth">24dp</dimen>
+   
+    <dimen name="device_msg_margin">11dp</dimen>
+    <dimen name="device_line_heigth">24dp</dimen>
+
+</resources>
