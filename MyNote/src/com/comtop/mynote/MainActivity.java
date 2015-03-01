@@ -39,7 +39,7 @@ public class MainActivity extends FragmentActivity {
 
 
 	/**
-	 * 初始化
+	 * 初始化1
 	 */
 	private void initControl() {
 
